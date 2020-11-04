@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Array</title>
+        <script>
+            let jagoan = {
+                nama:"goku",
+                energi:5000,
+                pukul:function(){
+                    this.energi = this.energi - 20;
+                },
+                makan:function(){
+                    this.energi = this.energi + 50;
+                }
+            }
+            console.log("Nama Jagoan " + jagoan.nama);
+            console.log("energi jagoan " + jagoan.energi);
+            jagoan.pukul();
+            console.log("energi jagoan setelah pukul " + jagoan.energi);
+            
+            function run(){
+                jagoan.pukul();
+                alert("energi " + jagoan.nama + " - " + jagoan.energi);
+            }
+        </script>
+    </head>
+    <body>
+       <button onclick="run()">Jagoan Pukul</button>
+    </body>
+</html>

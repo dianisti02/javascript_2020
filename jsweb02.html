@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>JS 02</title>
+        <script>
+            let cars = ["Toyota","BMW","Honda","Opel"];
+            console.log("Mobil index ke -2 " + cars[2]);
+            console.log("Jumlah Mobil : " + cars.length);
+            cars.push("Wuling");
+            console.log("Mobil baru tambahan " + cars[4]);
+            let idx;
+            cars.sort().reverse();
+            document.write("<ol>");
+            for(idx in cars){
+                document.write("<li>" + cars[idx] + "</li>" );
+            }
+            document.write("</ol>");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

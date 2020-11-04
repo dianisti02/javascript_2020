@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Array</title>
+        <script>
+            let buahs = ["mangga","pisang","jambu","duren"];
+            console.log("buah ke -3 " + buahs[3]);
+            console.log("Jumlah Buah : " + buahs.length);
+            buahs.push("manggis");
+            console.log("buah baru index ke-4 " + buahs[4]);
+            let idx ;
+            document.write("<ol>");
+            for (idx in buahs){
+                document.write("<li>"+buahs[idx]+"</li>");
+            }
+            document.write("</ol>");
+        </script>
+    </head>
+    <body>
+        <ol>
+            <li>Ahmad</li>
+            <li>Budi</li>
+        </ol>
+        <hr/>
+
+    </body>
+</html>

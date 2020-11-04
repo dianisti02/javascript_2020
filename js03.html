@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS01</title>
+        <script>
+           let jagoan = {
+               nama:"Goku",
+               energi:5000,
+               pukul: function(){
+                   this.energi = this.energi - 20;
+               },
+               makan: function(){
+                   this.energi = this.energi + 50;
+               }
+           }
+           function gokuPukul(){
+               jagoan.pukul();
+               alert("Nama Jagoan : " + jagoan.nama + " , energi " + jagoan.energi);
+           }
+
+           console.log("Nama Jagoan : " + jagoan.nama + " , energi " + jagoan.energi);
+           jagoan.pukul();// jagoan memukul 1
+           jagoan.pukul();// jagoan memukul 2
+           console.log("Nama Jagoan : " + jagoan.nama + " , energi " + jagoan.energi);
+        </script>
+    </head>
+    <body>
+        <button onClick="gokuPukul()">Pukul</button>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>JS</title>
+    <script>
+        let siswa1 = {
+            nama:"Ahmad Faiz",
+            umur:20,
+            berat:45,
+            cetak : function(){
+                return this.nama + " usianya " + this.umur;
+            }
+        }
+        let status_berat;
+        if(siswa1.berat > 80){
+            status_berat = " Gemuk";
+        }else if(siswa1.berat < 25){
+            status_berat = " Kurus";
+        }else{
+            status_berat = " Berat Ideal";
+        }
+        console.log(siswa1.nama + status_berat);
+        
+        console.log("today is - " + day);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

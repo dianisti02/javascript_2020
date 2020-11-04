@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>JS Pertama</title>
+        <script>
+            // program pertama
+            alert("Selamat Belajar JavaScript");
+            /* banyak
+              komen */
+            let nama = "Ahmad Budiman";
+            let umur = 19;
+            let berat = 46.30;
+            console.log("Nama Siswa "  + nama);
+            console.log("Usia " + umur);
+            console.log("Berat Badan " + berat + " Kg");
+            console.log((berat > 80) ? "Kegemukan": "Berat Ideal");// ternary operation
+            document.write("<h1>Data Mahasiswa STT-NF</h1>");
+        </script>
+    </head>
+    <body>
+        <!-- komentar HTML -->
+        <div id="siswa"></div>
+        <script>
+            document.getElementById("siswa").innerHTML="Nama Siswa : " + nama; 
+        </script>
+
+    </body>
+</html>
