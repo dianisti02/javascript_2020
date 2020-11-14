@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Web JS01</title>
+        <style>
+            body{
+                background-color: #F4FF81;
+            }
+            #nf{
+                background-color:#827717;
+                color:white;
+                text-align: center;
+            }
+            .prodi{
+                border:1px solid black;
+            }
+        </style>
+        <script>
+            function salam(){
+                alert("Hello Salam Kenal !!");
+            }
+            function salamKenal(nama){
+                alert("Salam dari " + nama);
+            }
+            function makeGreen(){
+                // ambil area obyek id=nf
+                let area_nf = document.getElementById("nf");
+                area_nf.style.backgroundColor="#AEEA00";
+            }
+            function makeNormal(){
+                 // ambil area obyek id=nf
+                 let area_nf = document.getElementById("nf");
+                area_nf.style.backgroundColor="#827717";
+            }
+            function prodi(){
+                // ambil area class prodi
+                let area_prodi = document.getElementsByClassName("prodi")[0];
+                area_prodi.style.backgroundColor="cyan";
+            }
+        </script>
+    </head>
+    <body onload="salam()">
+        <div id="nf" onmouseover="makeGreen()" onmouseout="makeNormal()">
+            <h1>STT Terpadu Nurul Fikri</h1>
+        </div>
+        <hr/>
+        <div class="prodi" onmouseover="prodi()">
+            <h2>Program Studi</h2>
+            <ol>
+                <li>Sistem Informasi</li>
+                <li>Teknik Informatika</li>
+                <li>Desain Komunikasi Visual</li>
+            </ol>
+        </div>
+        <br/>
+        <button onclick="salamKenal('Ridho')" class="prodi">Salam</button>
+    </body>
+</html>

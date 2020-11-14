@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+            <title>Calculator</title>
+            <script>
+                function jumlah(){
+                    // ambil obyek id=bil1 dan bil2
+                    let $bil1 = document.getElementById("bil1");
+                    let $bil2 = document.getElementById("bil2");
+                    // ambil nilai dari bil1 dan bil2
+                    let x = Number($bil1.value);
+                    let y = Number($bil2.value);
+                    let z = x + y ;
+                    // tampilkan z di value bil3
+                    document.getElementById("bil3").value=z;
+                }
+            </script>
+    </head>
+    <body>
+        <form id="frm1">
+            <input type="number" id="bil1" value="0" onchange="jumlah()"/>
+            <b>+</b>
+            <input type="number" id="bil2" value="0" onchange="jumlah()"/>
+            <b>=</b>
+            <input type="number" id="bil3" value="0"/>
+        </form>
+    </body>
+</html>

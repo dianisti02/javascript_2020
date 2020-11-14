@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Web JS01</title>
+        <style>
+            body{
+                background-color: #FFDE03;
+            }
+            #nf{
+                background-color: #0336DF;
+                color:white;
+            }
+            .kotak{
+                border:1px solid black;
+            }
+        </style>
+        <script>
+            function salam(){
+                alert("Selamat Datang di STT-NF");
+            }
+            function salamKenal(nama){
+                alert("Hello " + nama);
+            }
+            function makeOrange(){
+                // ambil area id=nf
+                let area_nf = document.getElementById("nf");
+                area_nf.style.backgroundColor="orange";
+                area_nf.style.textAlign="center";
+            }
+            function makeBlue(){
+                // ambil area id=nf
+                let area_nf = document.getElementById("nf");
+                area_nf.style.backgroundColor="blue";
+                area_nf.style.textAlign="center";
+            }
+        </script>
+    </head>
+    <body onload="salam()">
+        <div id="nf" onmouseover="makeOrange()" onmouseout="makeBlue()">
+            <h1>STT Terpadu Nurul Fikri</h1>
+        </div>
+        <hr/>
+        <div class="kotak">
+            <h2>Program Studi</h2>
+            <ol>
+                <li>Sistem Informasi</li>
+                <li>Teknik Informatika</li>
+            </ol>
+        </div>
+        <br/>
+        <button onclick="salamKenal('heru')">salam</button>
+    </body>
+</html>
